@@ -94,7 +94,7 @@ def main():
         unsafe_allow_html=True,
     )
 
-    # Email contact button
+    # Contact section
     col_contact1, col_contact2, col_contact3 = st.columns([1, 2, 1])
     with col_contact2:
         if st.button(
@@ -102,6 +102,22 @@ def main():
         ):
             st.markdown("**Email:** arallo@rhfny.com")
             st.markdown("**Click to copy:** `arallo@rhfny.com`")
+    
+    # Website link
+    col_website1, col_website2, col_website3 = st.columns([1, 2, 1])
+    with col_website2:
+        st.markdown("""
+        <div style="text-align: center; margin: 10px 0;">
+            <p style="color: #2a5298; font-size: 1.1em; margin: 5px 0;">
+                <strong>Today's Rates and Questions:</strong> 
+                <a href="https://relianthomefunding.com/cpt-team-members/andrew-rallo" 
+                   target="_blank" 
+                   style="color: #2a5298; text-decoration: none; font-weight: bold;">
+                    Visit My Website
+                </a>
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
 
     st.markdown("---")
 
